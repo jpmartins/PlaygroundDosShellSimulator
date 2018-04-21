@@ -12,7 +12,7 @@ public class CreateDrive implements Command{
                throw new InvalidParam("<drive_name>");
           cap = st.nextToken();
           int capac = Integer.parseInt(cap);
-          ex.getFSystem().addDrive(new Character(letter.charAt(0)),capac);
+          ex.getFSystem().addDrive(Character.valueOf(letter.charAt(0)),capac); //valueOf uses cache, more efficient the using constructor
         }catch(NoSuchElementException e){
           throw new MissingParam("<new_drive_letter> <new_drive_size>");
         }catch(NumberFormatException e){

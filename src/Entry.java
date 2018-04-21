@@ -15,7 +15,7 @@ public abstract class Entry implements Serializable{
      public void list(PrintStream out ,int depth, int currlevel)
      {
           out.print(name+" ");
-          out.println( new Integer( getSize() ).toString() );
+          out.println( Integer.valueOf( getSize() ) ); //valueOf uses cache, more efficient the using constructor
      }
 
      public abstract int getSize();

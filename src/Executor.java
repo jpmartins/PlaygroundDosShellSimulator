@@ -34,7 +34,7 @@ public class Executor implements Runnable{
           in  = r;
           //inciaço por defeito do Executor
           fs = f;
-          currentDrive = fs.getDrive(new Character('c'));
+          currentDrive = fs.getDrive(Character.valueOf('c')); //valueOf uses cache, more efficient the using constructor
           currentDir   = currentDrive.getroot();
           currentDir.decExecutores();
           Program.incExecs();

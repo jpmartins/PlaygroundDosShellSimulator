@@ -13,7 +13,7 @@ public class FileSystem implements Serializable{
 
      public FileSystem(){}
      public FileSystem(int size){
-      drives.put(new Character('c'), new Drive(new Character('c'),size));
+      drives.put(Character.valueOf('c'), new Drive(Character.valueOf('c'),size)); //valueOf uses cache, more efficient the using constructor
      }
 
      public void addDrive(Character l,int size) throws FSException{
