@@ -1,0 +1,44 @@
+createDir dirx
+createDir diry
+createDir dirz
+createFile filea.a 2122
+createFile fileb.b 5122
+createFile fileb.c 3142
+cd dirx
+createFile fileda.a 2122
+createFile filedb.b 5122
+createFile filevb.c 3142
+cd ..
+cd diry
+createFile filesa.a 1122
+createFile filefb.b 5562
+createFile filehb.c 4142
+cd ..
+cd dirz
+createFile fileha.a 21122
+createFile fileub.b 512
+createFile filerb.c 3443
+cd ..
+createDrive x 123123
+drive x
+createDir dirx
+createDir diry
+createDir dirz
+createFile filea.a 2122
+createFile fileb.b 5122
+createFile fileb.c 3142
+cd dirx
+createFile fileda.a 2122
+createFile filedb.b 5122
+createFile filevb.c 3142
+cd ..
+cd diry
+createFile filesa.a 1122
+createFile filefb.b 5562
+createFile filehb.c 4142
+cd ..
+cd dirz
+createFile fileha.a 21122
+createFile fileub.b 512
+createFile filerb.c 3443
+exit
